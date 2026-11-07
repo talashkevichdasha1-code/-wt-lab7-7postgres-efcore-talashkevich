@@ -1,0 +1,21 @@
+### Добавление нового участника
+POST http://localhost:5212/api/members
+Content-Type: application/json
+
+{
+    "name": "Иван Соколов",
+    "age": 24,
+    "membershipPlanId": 1,
+    "trainerId": 2,
+    "isActive": true
+}
+
+###
+
+### Удаление участника с ID 6
+DELETE http://localhost:5212/api/members/6
+
+###
+
+### Проверка удаления
+GET http://localhost:5212/api/members/6
